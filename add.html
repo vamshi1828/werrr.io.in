@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Responsive Registaration Form</title>
+        <link rel="stylesheet" href="./responsiveRegistration.css">
+        <script type="text/javascript" lang="javascript" src="./responsiveRegistaration.js"></script>
+        <link rel="stylesheet" href="qtt.css">
+    </head>
+       
+    <body>
+        <h1>Add Bug</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <label for="fname">Project title:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="fname" name="firstname" placeholder="project">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="l">Type:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="lname" name="Type" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" placeholder="it should contain @,.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="Client name">Client Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="col-90">
+                    <input type="radio" id="male" name="gender" value="male"/>Male
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="dob">Client Address:</label>
+                </div>
+                <div class="col-90">
+                    <input type="Date" id="dob" name="dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="address">Description:     </label>
+                </div>
+                <div class="col-90">
+                    <textarea name="Description" id="Description" cols="20" rows="9"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="city">Frontend:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="city" name="city" maxlength="9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="pincode">Backend</label>
+                </div>
+                <br>
+            <div class="row">
+                <input type="submit" value="Registered" onclick="SaveStudentDetails()">
+                <input type="reset" value="Reset" onclick="SaveStudentDetails()">
+            </div>  
+        </div>  
+    </body>
+</html>
